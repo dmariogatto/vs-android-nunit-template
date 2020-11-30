@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VSTemplate xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Version="3.0.0" Type="Project">
+   <TemplateData>
+      <Name Package="{2d510815-1c4e-4210-bd82-3d9d2c56c140}" ID="5028" />
+      <Description Package="{2d510815-1c4e-4210-bd82-3d9d2c56c140}" ID="5029" />
+      <ProjectType>CSharp</ProjectType>
+      <ProjectSubType />
+      <SortOrder>1000</SortOrder>      
+      <CreateNewFolder>true</CreateNewFolder>
+      <DefaultName>UnitTestApp</DefaultName>
+      <ProvideDefaultName>true</ProvideDefaultName>
+      <LocationField>Enabled</LocationField>
+      <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+      <Icon>android-app.ico</Icon>
+      <LanguageTag>C#</LanguageTag>
+      <PlatformTag>android</PlatformTag>
+      <ProjectTypeTag>mobile</ProjectTypeTag>
+   </TemplateData>
+   <TemplateContent>
+      <Project TargetFileName="DroidUnitTestCSharp.csproj" File="DroidUnitTestCSharp.csproj" ReplaceParameters="true">
+         <Folder Name="Assets" TargetFolderName="Assets">
+            <ProjectItem ReplaceParameters="true" TargetFileName="AboutAssets.txt">AboutAssets.txt</ProjectItem>
+         </Folder>
+         <ProjectItem ReplaceParameters="true" TargetFileName="MainActivity.cs">MainActivity.cs</ProjectItem>
+         <Folder Name="Properties" TargetFolderName="Properties">
+            <ProjectItem ReplaceParameters="true" TargetFileName="AndroidManifest.xml">AndroidManifest.xml</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+         </Folder>
+         <Folder Name="Resources" TargetFolderName="Resources">
+            <ProjectItem ReplaceParameters="true" TargetFileName="AboutResources.txt">AboutResources.txt</ProjectItem>
+            <Folder Name="mipmap-hdpi" TargetFolderName="mipmap-hdpi">
+               <ProjectItem ReplaceParameters="false" TargetFileName="Icon.png">Icon.png</ProjectItem>
+            </Folder>
+            <Folder Name="mipmap-mdpi" TargetFolderName="mipmap-mdpi">
+               <ProjectItem ReplaceParameters="false" TargetFileName="Icon.png">Icon.png</ProjectItem>
+            </Folder>
+            <Folder Name="mipmap-xhdpi" TargetFolderName="mipmap-xhdpi">
+               <ProjectItem ReplaceParameters="false" TargetFileName="Icon.png">Icon.png</ProjectItem>
+            </Folder>
+            <Folder Name="mipmap-xxhdpi" TargetFolderName="mipmap-xxhdpi">
+               <ProjectItem ReplaceParameters="false" TargetFileName="Icon.png">Icon.png</ProjectItem>
+            </Folder>
+            <Folder Name="mipmap-xxxhdpi" TargetFolderName="mipmap-xxxhdpi">
+               <ProjectItem ReplaceParameters="false" TargetFileName="Icon.png">Icon.png</ProjectItem>
+            </Folder>            
+            <Folder Name="values" TargetFolderName="values">
+               <ProjectItem ReplaceParameters="true" TargetFileName="strings.xml">strings.xml</ProjectItem>
+            </Folder>
+         </Folder>
+         <ProjectItem ReplaceParameters="true" TargetFileName="TestSample.cs" OpenInEditor="true">TestSample.cs</ProjectItem>
+      </Project>
+   </TemplateContent>
+</VSTemplate>
